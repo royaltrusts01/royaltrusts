@@ -624,5 +624,38 @@ img {
   }
 }
 
+/* your normal CSS here */
+
+/* previous media query you added */
+@media (max-width: 768px) {
+  /* your earlier responsive rules */
+}
+
+/* new improved mobile fixes — add below the previous one */
+@media (max-width: 768px) {
+  .slide img,
+  .hero img,
+  .gallery img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .slide-text,
+  .hero-text,
+  .content {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+}
+
+
 
 
