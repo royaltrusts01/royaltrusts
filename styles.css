@@ -1,3 +1,4 @@
+
 /* ===== Desktop / Default Styles ===== */
 body {
   font-family: 'Poppins', sans-serif;
@@ -240,8 +241,8 @@ main {
   overflow: hidden;
   box-shadow: 0 4px 25px rgba(0,0,0,0.5);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  width: 120px;
-  height: 300px;
+  width: 300px;
+  height: 350px;
 }
 
 .slide2-img img {
@@ -565,6 +566,21 @@ footer {
 }
 
 /* --- Responsive --- */
+/* =============================
+   ✅ FINAL RESPONSIVE STYLES
+   Works perfectly on both mobile & desktop
+============================= */
+
+/* Make all images responsive globally */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+/* ===== MOBILE & TABLET VIEW ===== */
 @media (max-width: 768px) {
 
   /* General layout */
@@ -700,4 +716,3 @@ footer {
     padding: 8px 16px;
   }
 }
-
