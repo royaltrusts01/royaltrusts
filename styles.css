@@ -603,3 +603,26 @@ img {
   }
 }
 
+/* ===== Mobile Responsive Fix ===== */
+@media (max-width: 768px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card, .image-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  h1, h2, h3, p {
+    text-align: center;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+
+
