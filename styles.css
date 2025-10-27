@@ -1,10 +1,28 @@
-/* --- Global Reset & Base --- */
+/* ===== Desktop / Default Styles ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* --- Global Reset & Base --- */
 html {
   scroll-behavior: smooth; /* smooth scrolling */
 }
@@ -222,8 +240,8 @@ main {
   overflow: hidden;
   box-shadow: 0 4px 25px rgba(0,0,0,0.5);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  width: 300px;
-  height: 350px;
+  width: 120px;
+  height: 300px;
 }
 
 .slide2-img img {
@@ -574,7 +592,7 @@ footer {
   }
 }
 
-* Make all images responsive */
+/* Make all images responsive */
 img {
   max-width: 100%;
   height: auto;
@@ -656,6 +674,26 @@ img {
   }
 }
 
+/* ===== Mobile Responsive Styles ===== */
+@media (max-width: 768px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
 
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
 
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
 
