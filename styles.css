@@ -573,3 +573,33 @@ footer {
     padding: 1.5rem;
   }
 }
+
+* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optional: add some margin or rounded corners */
+img {
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
